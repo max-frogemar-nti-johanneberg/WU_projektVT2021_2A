@@ -13,18 +13,26 @@ nav{
     align-items: center;
 }
 
+.nav-block-element-active{
+    height: 90vh;
+    width: 420px;
+    position: fixed;
+    transition: all 0.5s;
+}
+
 .nav-links{
     height: 90vh;
     display: flex;
     list-style: none;
-    top: -90vh;
+    top: -95vh;
     position: absolute;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 nav li a{
     text-decoration: none;
-    font-size: 17px;
+    font-size: 24px;
     letter-spacing: 1px;
     font-weight: bold;
     text-transform: capitalize;
@@ -47,13 +55,15 @@ nav li a{
 }
 
 .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: translateY(137px) rotate(-45deg) translate(-17px, 6px);
+
 }
 .toggle .line2 {
     opacity: 0;
 }
 .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+    transform: translateY(137px) rotate(45deg) translate(-5px, 6px);
+
 }
 
 main{
@@ -64,23 +74,33 @@ main{
     display: grid;
     width: 420px;
     height: 100vh;
+    overflow-y: scroll;
 
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr 1fr;
+    grid-template-rows: 100px 1fr 200px;
     grid-template-areas: 
     "he"
     "se1"
     "se2";    
 }
 
+#welcome_main{
+    background: img/padel_bild_1(img); 
+}
+
 header{
     background-color: orange;
     grid-area: he;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 7px;
 }
 
 .section_1{
     background-color: red;
     grid-area: se1;
+    padding: 15px;
+    border-radius: 7px;
 }
 
 .section_2{
@@ -139,6 +159,7 @@ footer{
 
     .nav-links{
         height: 50px;
+        width: 100vw;
         display: flex;
         list-style: none;
         position: absolute;
@@ -147,4 +168,5 @@ footer{
         align-items: center;
         justify-content: space-evenly;
     }
+
 }
