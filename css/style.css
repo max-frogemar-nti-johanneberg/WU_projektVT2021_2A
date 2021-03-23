@@ -67,28 +67,27 @@ nav li a{
 }
 
 main{
-    padding: 50px;
+    padding: 40px;
     background-color: aqua;
     grid-area: ma;
 
     display: grid;
     width: 420px;
     height: 100vh;
-    overflow-y: scroll;
+    overflow-y: auto;
 
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr 200px;
+    grid-template-rows: 100px 1fr 1fr;
     grid-template-areas: 
     "he"
     "se1"
     "se2";    
 }
 
-#welcome_main{
-    background: img/padel_bild_1(img); 
-}
+
 
 header{
+    display: flex;
     background-color: orange;
     grid-area: he;
     padding: 5px;
@@ -96,16 +95,33 @@ header{
     border-radius: 7px;
 }
 
-.section_1{
+header h1{
+    margin: 20px;
+    align-items: center;
+}
+
+.section_1{ 
     background-color: red;
     grid-area: se1;
-    padding: 15px;
+    margin: 2px;
+    padding: 20px;
     border-radius: 7px;
 }
 
+.section_1 h2{
+    margin: 3px;
+}
+
 .section_2{
-    background-color: red;
-    grid-area: se1;
+    background-color: lightgreen;
+    margin: 2px;
+    padding: 20px;
+    border-radius: 7px;
+    grid-area: se2;
+}
+
+.section_2 h2{
+    margin: 3px;
 }
 
 footer{
@@ -135,7 +151,7 @@ footer{
         height: 100vh;
     
         grid-template-columns: 1fr;
-        grid-template-rows: 200px, 800px, 400px;
+        grid-template-rows: 200px, 1fr, 400px;
     
         grid-template-areas: 
         "na"
@@ -143,8 +159,33 @@ footer{
         "fo";
     }
 
+    .nav-links{
+        height: 50px;
+        width: 100vw;
+        display: flex;
+        list-style: none;
+        position: absolute;
+        transform: translateY(95vh);
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
     main{
         width: 100vw;
+
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 100px 1fr ;
+        grid-template-areas: 
+        "he he"
+        "se1 se2"; 
+    }
+
+    .section_2{
+        margin: 2px;
+        padding: 15px;
+        border-radius: 7px;
+        grid-area: se2;
     }
 
     .line1 {
@@ -157,16 +198,6 @@ footer{
         opacity: 0;
     }
 
-    .nav-links{
-        height: 50px;
-        width: 100vw;
-        display: flex;
-        list-style: none;
-        position: absolute;
-        transform: translateY(90vh);
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-    }
+    
 
 }
