@@ -7,15 +7,16 @@
 nav{
     height: 50px;
     display: flex;
-    background-color: lightpink;
+    background-color: white;
     grid-area: na;
     justify-content: center;
     align-items: center;
+    font-family: sans-serif;
 }
 
 .nav-block-element-active{
     height: 90vh;
-    width: 420px;
+    width: 100%;
     position: fixed;
     transition: all 0.5s;
 }
@@ -37,6 +38,12 @@ nav li a{
     font-weight: bold;
     text-transform: capitalize;
 }
+nav li a:link{
+    color: black;
+}
+nav li a:visited{
+    color: black;
+}
 
 .nav-active {
     height: 90vh;
@@ -44,8 +51,8 @@ nav li a{
 }
 
 .hamburgare div {
-    background-color: rgb(223, 144, 70);
-    height: 3px;
+    background-color: black;
+    height: 4px;
     width: 25px;
     margin: 5px;
     border-radius: 10%;
@@ -55,7 +62,7 @@ nav li a{
 }
 
 .toggle .line1 {
-    transform: translateY(137px) rotate(-45deg) translate(-17px, 6px);
+    transform: translateY(137px) rotate(-45deg) translate(-18px, 8px);
 
 }
 .toggle .line2 {
@@ -63,7 +70,6 @@ nav li a{
 }
 .toggle .line3 {
     transform: translateY(137px) rotate(45deg) translate(-5px, 6px);
-
 }
 
 main{
@@ -72,8 +78,8 @@ main{
     grid-area: ma;
 
     display: grid;
-    width: 420px;
-    height: 100vh;
+    width: auto;
+    height: auto;
     overflow-y: auto;
 
     grid-template-columns: 1fr;
@@ -84,59 +90,115 @@ main{
     "se2";    
 }
 
-
+#welcome_main{
+    background-image: url(/img/padel_bild_1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#about_main{
+    background-image: url(/img/padel_bild_6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#booking_main{
+    background-image: url(/img/padel_bild_3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#buy_main{
+    background-image: url(/img/padel_bild_7.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#what_main{
+    background-image: url(/img/padel_bild_5.jpg);
+    background-position: center;
+    background-size: cover;
+}
 
 header{
     display: flex;
-    background-color: orange;
+    background-color: white;
     grid-area: he;
-    padding: 5px;
     margin-bottom: 10px;
     border-radius: 7px;
 }
 
 header h1{
+    font-family: sans-serif;
     margin: 20px;
     align-items: center;
 }
 
 .section_1{ 
-    background-color: red;
+    background-color: white;
     grid-area: se1;
     margin: 2px;
     padding: 20px;
     border-radius: 7px;
+    font-size: 19px;
 }
 
 .section_1 h2{
+    font-family: sans-serif;
     margin: 3px;
 }
 
 .section_2{
-    background-color: lightgreen;
+    background-color: white;
     margin: 2px;
     padding: 20px;
     border-radius: 7px;
     grid-area: se2;
+    font-size: 19px;
 }
 
 .section_2 h2{
+    font-family: sans-serif;
     margin: 3px;
 }
 
 footer{
-    height: 400px;
-    background-color: orchid ;
+    background-color: white;
     grid-area: fo;
+
+    display: grid;
+    width: auto;
+    height: auto;
+
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "rd1 rd2"
+    ; 
+    display: flex;
+    justify-content: space-evenly;   
+}
+#rad_1{
+    grid-area: rd1;
+}
+#rad_2{
+    grid-area: rd2;
+}
+
+.footer_rubrik{
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+    font-size: 17px;
+}
+footer div ul li a{
+    text-decoration: none;
 }
 
 .grid_wrapper{
     display: grid;
-    width: 420px;
-    height: 830px;
+    width: auto;
+    height: auto;
 
-    grid-template-columns: 420px;
-    grid-template-rows: 100px, 800px, 400px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
 
     grid-template-areas: 
     "na"
@@ -151,12 +213,22 @@ footer{
         height: 100vh;
     
         grid-template-columns: 1fr;
-        grid-template-rows: 200px, 1fr, 400px;
+        grid-template-rows: auto 1fr auto;
     
         grid-template-areas: 
         "na"
         "ma"
         "fo";
+    }
+
+    nav li a{
+        font-size: 26px;
+    }
+
+    header{
+        background-color: azure;
+        opacity: 90%;
+        padding: 5px;
     }
 
     .nav-links{
@@ -172,7 +244,10 @@ footer{
     }
 
     main{
+        height: max-content;
         width: 100vw;
+        background-image: url(/img/padel_bild_2.jpg);
+        background-size: cover;
 
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 100px 1fr ;
@@ -180,8 +255,27 @@ footer{
         "he he"
         "se1 se2"; 
     }
+    #about_main{
+        background-image: url(/img/padel_bild_2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    #buy_main{
+        background-image: url(/img/padel_bild_4.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .section_1{
+        background-color: azure;
+        opacity: 90%;
+        height: fit-content;
+    }
 
     .section_2{
+        background-color: azure;
+        opacity: 90%;
+        height: fit-content;
         margin: 2px;
         padding: 15px;
         border-radius: 7px;
@@ -198,6 +292,8 @@ footer{
         opacity: 0;
     }
 
-    
+    footer{
+        width: auto;
+    }
 
 }
