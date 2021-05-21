@@ -91,27 +91,27 @@ main{
 }
 
 #welcome_main{
-    background-image: url(/img/padel_bild_1.jpg);
+    background-image: url(/img/padel_bild_1_edit.jpg);
     background-position: center;
     background-size: cover;
 }
 #about_main{
-    background-image: url(/img/padel_bild_6.jpg);
+    background-image: url(/img/padel_bild_6_edit.jpg);
     background-position: center;
     background-size: cover;
 }
 #booking_main{
-    background-image: url(/img/padel_bild_3.jpg);
+    background-image: url(/img/padel_bild_3_edit.jpg);
     background-position: center;
     background-size: cover;
 }
 #buy_main{
-    background-image: url(/img/padel_bild_7.jpg);
+    background-image: url(/img/padel_bild_7_edit.jpg);
     background-position: center;
     background-size: cover;
 }
 #what_main{
-    background-image: url(/img/padel_bild_5.jpg);
+    background-image: url(/img/padel_bild_5_edit.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -246,7 +246,7 @@ footer div ul li a{
     main{
         height: max-content;
         width: 100vw;
-        background-image: url(/img/padel_bild_2.jpg);
+        background-image: url(/img/padel_bild_2_edit.jpg);
         background-size: cover;
 
         grid-template-columns: 2fr 1fr;
@@ -256,7 +256,7 @@ footer div ul li a{
         "se1 se2"; 
     }
     #about_main{
-        background-image: url(/img/padel_bild_2.jpg);
+        background-image: url(/img/padel_bild_2_edit.jpg);
         background-position: center;
         background-size: cover;
     }
