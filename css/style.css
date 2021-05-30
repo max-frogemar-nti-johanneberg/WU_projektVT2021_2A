@@ -78,7 +78,7 @@ nav li a:visited{
 
 main{
     padding: 40px;
-    background-color: aqua;
+    background-color: white;
     grid-area: ma;
 
     display: grid;
@@ -151,7 +151,9 @@ header h1{
 }
 
 #bild_welcome_section_1{
+    width: 60%;
     float: right;
+    padding: 6px;
 }
 .section_2{
     background-color: white;
@@ -168,7 +170,9 @@ header h1{
 }
 
 #bild_booking_section_2{
+    width: 60%;
     float: left;
+    padding: 6px;
 }
 
 .section_3{
@@ -202,10 +206,12 @@ footer{
     justify-content: space-evenly;   
 }
 #rad_1{
+    font-size: 20px;
     grid-area: rd1;
     padding: 5px;
 }
 #rad_2{
+    font-size: 20px;
     grid-area: rd2;
     padding: 5px;
 }
@@ -271,6 +277,9 @@ footer div ul li a{
         align-items: center;
         justify-content: space-evenly;
     }
+    .nav-links a:hover{
+        font-size: 28px;
+    }
 
     main{
         height: max-content;
@@ -301,6 +310,12 @@ footer div ul li a{
         background-color: azure;
         opacity: 90%;
         height: fit-content;
+    }
+    #bild_welcome_section_1{
+        width: 40%;
+    }
+    #bild_booking_section_2{
+        width: 29%;
     }
 
     .section_2{
@@ -333,4 +348,10 @@ footer div ul li a{
         width: auto;
     }
 
+    #rad_1{
+        font-size: 16px;
+    }
+    #rad_2{
+        font-size: 16px;
+    }
 }
